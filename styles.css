@@ -259,8 +259,8 @@ footer {
         z-index: 1;
         background-color: #000;
         height: 100vh;
-        transform: translateY(-4px);
-        transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+        transform: translateX(-500px);
+        transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
     }
 
     .header-links-mobile a {
@@ -280,7 +280,7 @@ footer {
 
     .header-links-mobile.active {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
         /* height: 100vh;
         background-color: #000; */
     }
