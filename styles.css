@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', serif;
+    background-color: hsl(218, 28%, 13%);
+}
+
+/* main {
+    width: 80%;
+    margin: 0 auto;
+} */
+
+.header-nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+}
+
+button {
+    font-weight: 400;
+    border: none;
+    padding: 0.65rem 1rem;
+    color: #000;
+    background-color: yellow;
+    font-size: 1rem;
+}
+
+.header-links a {
+    font-weight: 400;
+    text-decoration: none;
+    color: hsl(0, 0%, 60%);
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.header-links-mobile {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+.header-text {
+    width: 80%;
+    margin: 0 auto;
+    /* width: 60%; */
+    padding-top: 3.5rem;
+}
+
+.header-text-content {
+    width: 60%;
+}
+
+.header-text h1 {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+}
+
+.header-text p {
+    font-weight: 400;
+    color: hsl(0, 0%, 60%);
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    width: 85%;
+}
+
+.logos-section-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 4.5rem 0 4rem;
+}
+
+.logos-section-mobile {
+    display: none;
+}
+
+.work-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-tile {
+    width: 45%;
+}
+
+.work-tile h2 {
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    font-size: 2.2rem;
+    padding-top: 1.2rem;
+}
+
+.work-tile p {
+    font-weight: 400;
+    color: hsl(0, 0%, 60%);
+    padding: 1rem 0 3.5rem;
+    font-size: 1.2rem;
+}
+
+.work-tile img {
+    width: 100%;
+}
+
+.about {
+    background-color: hsl(214, 17%, 51%);
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.about-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 24rem;
+}
+
+.about-content h2 {
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    width: 25rem;
+    font-size: 1.6rem;
+}
+
+.about-content p {
+    font-weight: 400;
+    color: hsl(0, 0%, 85%);
+    width: 25rem;
+    font-size: 1.2rem;
+    padding-top: 1.2rem;
+    line-height: 1.2;
+}
+
+.contact-me {
+    padding: 2rem 0;
+}
+
+.contact-me-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-me h2 {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+}
+
+.contact-me p {
+    font-weight: 400;
+    color: hsl(0, 0%, 60%);
+    width: 28rem;
+    font-size: 1.2rem;
+    padding-top: 0.75rem;
+    line-height: 1.25;
+}
+
+.contact-me button {
+    display: block;
+    margin: 1rem 0 3.5rem;
+}
+
+footer {
+    background-color: hsl(214, 17%, 51%);
+}
+
+.footer-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.social-icons img {
+    margin-left: 1rem;
+}
+
+@media(max-width: 760px) {
+
+    main {
+        width: 100%;
+        /* padding: 0 1rem; */
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header-nav {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .header-text {
+        width: 100%;
+    }
+
+    .header-text-content {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .header-text-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-text-content p {
+        width: 100%;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    /* .header-nav {
+        background-color: steelblue;
+    } */
+
+    .header-nav button {
+        display: none;
+    }
+
+    .header-links-mobile {
+        display: block;
+    }
+
+    .header-links-mobile {
+        font-weight: 400;
+        width: 100%;
+        opacity: 0;
+        text-align: center;
+        /* margin-top: 1rem; */
+        padding: 2rem 0;
+        position: absolute;
+        z-index: 1;
+        background-color: #000;
+        height: 100vh;
+        transform: translateY(-4px);
+        transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    }
+
+    .header-links-mobile a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 1rem;
+    }
+
+    .header-links-mobile button {
+        margin: 1rem auto 0;
+    }
+
+    /* .header-links-mobile.active {
+        opacity: 1;
+    } */
+
+    .header-links-mobile.active {
+        opacity: 1;
+        transform: translateY(0);
+        /* height: 100vh;
+        background-color: #000; */
+    }
+
+    .header-links-mobile * {
+        display: block;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .logos-section-content {
+        display: none;
+    }
+
+    .logos-section-mobile {
+        display: block;
+        margin: 3.5rem 0;
+    }
+
+    .logos-section-mobile div {
+        display: flex;
+        justify-content: center;
+        /* justify-content: space-between; */
+        /* text-align: center; */
+        width: 100%;
+        /* flex-direction: column; */
+        gap: 1.5rem;
+        margin-top: 1rem;
+        /* background-color: steelblue; */
+    }
+
+    /* .logos-section-mobile img {
+        margin: 0 1rem;
+    } */
+
+    .work-content {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .work-tile {
+        width: 100%;
+    }
+
+    .work-tile img {
+        width: 100%;
+    }
+
+    .about-content {
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .about-content h2 {
+        width: 100%;
+    }
+    
+    .about-content p {
+        width: 100%;
+    }
+
+    /* .contact-me-content {
+        padding: 2rem 0;
+    } */
+    
+    .contact-me-content p {
+        width: 100%;
+    }
+
+    .footer-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+}
