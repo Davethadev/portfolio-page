@@ -40,17 +40,13 @@ body {
     font-size: 1.2rem;
 }
 
-button {
+.button {
+    text-decoration: none;
     font-weight: 400;
-    border: none;
     padding: 0.65rem 1rem;
     color: #000;
     background-color: yellow;
     font-size: 1rem;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 .header-links a {
