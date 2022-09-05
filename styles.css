@@ -42,10 +42,11 @@ body {
 
 .button {
     display: block;
-    width: 45%;
+    width: 8.5rem;
+    text-align: center;
     text-decoration: none;
     font-weight: 400;
-    padding: 0.65rem 1rem;
+    padding: 0.75rem 1rem;
     color: #000;
     background-color: yellow;
     font-size: 1rem;
@@ -207,7 +208,7 @@ body {
     line-height: 1.25;
 }
 
-#contact-me button {
+#contact-me .button {
     display: block;
     margin: 1rem 0 3.5rem;
 }
@@ -308,6 +309,7 @@ footer {
     .header-links-mobile .button {
         width: 45%;
         margin: 1rem auto 0;
+        color: #000;
     }
 
     /* .header-links-mobile.active {
@@ -389,6 +391,10 @@ footer {
     #contact-me .contact-me-content p {
         width: 100%;
         padding-bottom: 1rem;
+    }
+
+    #contact-me .contact-me-content .button {
+        width: 45%;
     }
 
     .footer-content {
