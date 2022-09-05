@@ -21,7 +21,7 @@ body {
 } */
 
 .header {
-    margin-bottom: 3.5rem;
+    /* margin-bottom: 3.5rem; */
     height: 100vh;
 }
 
@@ -365,6 +365,10 @@ footer {
     /* .logos-section-mobile img {
         margin: 0 1rem;
     } */
+
+    #work {
+        margin-top: 4.5rem;
+    }
 
     .work-content {
         flex-direction: column;
