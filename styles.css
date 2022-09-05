@@ -242,6 +242,7 @@ footer {
 
     .header {
         position: relative;
+        height: auto;
     }
 
     .header-nav {
@@ -261,8 +262,13 @@ footer {
     }
 
     .avatar {
+        width: 100%;
         order: 1;
         margin-bottom: 2.5rem;
+    }
+
+    .avatar img {
+        width: 100%;
     }
 
     .header-text-content h1 {
